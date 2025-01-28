@@ -1,0 +1,29 @@
+.search {
+  padding: 2.5em 0 2em;
+  text-align: center;
+
+  &__input {
+    background-color: white;
+    padding: 0.25em 1em;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+
+  }
+
+  &__btn {
+    background-color: var(--primary-color);
+    padding: 0.25em 1em;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    color: azure;
+  }
+
+  &__error {
+    margin-top: 0.5em;
+    color: rgba(233, 125, 125, 0.884);
+    font-size: small;
+  }
+
+}
