@@ -6,6 +6,7 @@ import LocationCard from './components/LocationCard';
 import ResidentsList from './components/ResidentsList';
 import SearchForm from './components/SearchForm';
 import { randomId } from './utils';
+import Hero from './components/Hero';
 
 
 
@@ -22,7 +23,7 @@ function App() {
 
 	return (
 		<div>
-			 <h2>Rick</h2>
+			 <Hero />
 			<SearchForm setSearch={setSearch}/>
 			{pending ? <p>Cargando...</p> : data && <LocationCard location={data} />}
 			<ResidentsList residents={data?.residents} />
